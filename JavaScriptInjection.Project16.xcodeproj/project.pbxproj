@@ -15,6 +15,7 @@
 		E2020BF21CF6F91500F63295 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2020BF11CF6F91500F63295 /* ActionViewController.swift */; };
 		E2020BF51CF6F91500F63295 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2020BF31CF6F91500F63295 /* MainInterface.storyboard */; };
 		E2020BF91CF6F91500F63295 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E2020BEF1CF6F91500F63295 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E2FBE1D11CF8488100D05551 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = E2FBE1D01CF8488100D05551 /* Action.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E2020BF11CF6F91500F63295 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		E2020BF41CF6F91500F63295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		E2020BF61CF6F91500F63295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FBE1D01CF8488100D05551 /* Action.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				E2020BF11CF6F91500F63295 /* ActionViewController.swift */,
 				E2020BF31CF6F91500F63295 /* MainInterface.storyboard */,
 				E2020BF61CF6F91500F63295 /* Info.plist */,
+				E2FBE1D01CF8488100D05551 /* Action.js */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FBE1D11CF8488100D05551 /* Action.js in Resources */,
 				E2020BF51CF6F91500F63295 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +426,7 @@
 				E2020BFB1CF6F91600F63295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
