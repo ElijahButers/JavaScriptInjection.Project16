@@ -12,6 +12,9 @@ import MobileCoreServices
 class ActionViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    
+    var pageTitle = ""
+    var pageURL = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +25,12 @@ class ActionViewController: UIViewController {
                     // do stuff
                     let itemDictionary = dict as! NSDictionary
                     let javaScriptValues = itemDictionary[NSExtensionJavaScriptPreprocessingResultsKey] as! NSDictionary
-                    print(javaScriptValues)
+                    
+                    self.pageTitle = javaScriptValues["title"] as! String
+                    self.pageURL = javaScriptValues["URL"] as! String
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.title = self.pageTitle
+                    }
             }
         }
     }
