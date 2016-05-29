@@ -9,6 +9,9 @@ run: function(parameters) {
 },
 
 finalize: function (parameters) {
+    
+    var customJavaScript = parameters["customJavaript"];
+    eval (customJavaScript);
         
 }
 
